@@ -61,7 +61,7 @@ module.exports = {
                         '> Vet Cauldron\n' +
                         '> Vet Depth of Malatar\n' +
                         '\n' +
-                        'To schedule a time to run the verification PM one of the <@&1037196166066085968>.'},
+                        'To schedule a time to run the verification PM one of the <@&1036759219065585746>.'},
                 {name :"Healer Verification", value:'Healer will be required to complete 1 of 5 veteran dungeons at the discretion of the Verifier. The team will consist of  a Verified tank, a healer, and 2 verified DDs. One of which being a captain rank or above as the verifier. You will be required to show your character sheet, CP, skills, and sets.\n' +
                         '\n' +
                         '**The dungeons are as follows:**\n' +
@@ -71,7 +71,7 @@ module.exports = {
                         '> Vet Moon Hunters Keep\n' +
                         '> Vet Shipwright Regret\n' +
                         '\n' +
-                        'To schedule a time to run the verification PM one of the <@&1037196166066085968>.'},
+                        'To schedule a time to run the verification PM one of the <@&1036759219065585746>.'},
                 )
 
         interaction.guild.channels.cache.find(c => c.name === "rules").send({embeds: [Rules]})
