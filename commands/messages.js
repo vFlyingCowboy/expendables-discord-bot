@@ -50,7 +50,7 @@ module.exports = {
                 {name :"Who Needs to Submit a Parse", value:"All members wanting to DD will have to submit a parse on that specific toon. That includes Generals down to Private rank."})
 
         const tank = new EmbedBuilder()
-            .setAuthor({name: 'The Expendables Bank Access'})
+            .setAuthor({name: 'The Expendables Tank and Healer vTrials Requirments'})
             .setColor('#FF0000')
             .addFields({name :"Tank Verification", value:'Tanks will be required to complete 1 of 5 veteran dungeons at the discretion of the Verifier. The team will consist of  a tank, a verified healer, and 2 verified DDs. One of which being a captain rank or above as the verifier. You will be required to show your character sheet, CP, skills, and sets.\n' +
                         '\n' +
@@ -74,9 +74,9 @@ module.exports = {
                         'To schedule a time to run the verification PM one of the <@&1037196166066085968>.'},
                 )
 
-        // interaction.guild.channels.cache.find(c => c.name === "rules").send({embeds: [Rules]})
-        // interaction.guild.channels.cache.find(c => c.name === "🏧-bank-rules").send({embeds: [bank]})
-        // interaction.guild.channels.cache.find(c => c.name === "dps-parse-requirements").send({embeds: [requirements]})
+        interaction.guild.channels.cache.find(c => c.name === "rules").send({embeds: [Rules]})
+        interaction.guild.channels.cache.find(c => c.name === "🏧-bank-rules").send({embeds: [bank]})
+        interaction.guild.channels.cache.find(c => c.name === "dps-parse-requirements").send({embeds: [requirements]})
         interaction.guild.channels.cache.find(c => c.name === "tank-heal-vtrials-requirements").send({embeds: [tank]})
         await interaction.reply({content:"I did it!", ephemeral:true});
     },
